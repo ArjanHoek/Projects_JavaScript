@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>€</h1>
+      <h2>Exchange Rate Calculator</h2>
+    </header>
+    <div id="calculator">
+      <div class="input-container">
+        <h3>From:</h3>
+        <select id="select-from"></select>
+        <input type="number" id="input" value="1" placeholder="€" />
+      </div>
+      <div class="input-container">
+        <h3>Rate:</h3>
+        <button id="swap-button">Swap</button>
+        <p id="rate">1.00</p>
+      </div>
+      <div class="input-container">
+        <h3>To:</h3>
+        <select id="select-to"></select>
+        <p id="output">1.00</p>
+      </div>
+    </div>
+  </body>
+</html>

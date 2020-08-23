@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #576574;
+}
+
+.body {
+  background-color: #222f3e;
+  box-shadow: 0 0 15px #222f3e;
+  color: #c8d6e5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+}
+
+#movie-selector {
+  margin: 20px;
+}
+
+#movie-selector select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#legend {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#legend li {
+  display: flex;
+  margin: 0px 5px;
+}
+
+.legend-description,
+.instructions {
+  font-size: 0.9em;
+}
+
+.instructions {
+  color: #576574;
+  margin: 20px;
+}
+
+.seat {
+  background-color: #c8d6e5;
+  width: 12px;
+  height: 10px;
+  margin: 4px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: background-color 250ms, transform 250ms;
+}
+
+.row .seat:nth-of-type(2) {
+  margin-right: 15px;
+}
+
+.row .seat:nth-last-of-type(2) {
+  margin-left: 15px;
+}
+
+.row .seat:not(.occupied):hover {
+  cursor: pointer;
+  background-color: #ff9f43;
+  transform: scale(1.2);
+}
+
+.row {
+  display: flex;
+}
+
+.seat.selected {
+  background-color: #feca57;
+}
+
+.seat.occupied {
+  background-color: #576574;
+}
+
+#seat-selector {
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.screen {
+  background-color: #fff;
+  box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.459);
+  height: 70px;
+  width: 100%;
+  margin: auto;
+  transform: rotateX(-45deg);
+  margin-bottom: 10px;
+}
+
+.status {
+  color: #ff9f43;
+}
+
+#selection-status {
+  margin: 20px;
+}
+
+#book-seat {
+  background-color: #feca57;
+
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px;
+  transition: background-color 200ms, transform 200ms, color 200ms;
+  transition-timing-function: ease-out;
+}
+
+#book-seat:hover {
+  background-color: #ff9f43;
+  color: #fff;
+
+  cursor: pointer;
+  transform: translateY(-1px);
+}

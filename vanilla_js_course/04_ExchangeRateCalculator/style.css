@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #273c75;
+  color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input {
+  text-align: center;
+}
+
+select, input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 0
+}
+
+select:focus, input:focus, button {
+  outline: none;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #487eb0;
+  color: #f5f6fa
+}
+
+.input-container {
+  display: grid;
+  gap: 10px;
+  margin: 10px;
+  grid-template-columns: 100px 100px 100px;
+  padding: 5px;
+}
+
+#calculator h3 {
+  margin: 5px;
+  transform: translate(0, 3px);
+}
+
+#swap-button {
+  border: 2px solid #dcdde1;
+  border-radius: 20px;
+  padding: 10px;
+  margin: auto;
+  transition: background-color 200ms, color 200ms
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#output, #rate {
+  text-align: center;
+  transform: translate(0, 9px);
+}
+
+header h1 {
+  width: 60px;
+  border: 5px solid #f5f6fa;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 50%;
+}
+
+#calculator .input-container:nth-child(even) {
+  background-color: #fbc531;
+  color: #f5f6fa;
+  border-radius: 10px;
+}

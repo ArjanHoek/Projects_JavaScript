@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  background-color: #227093;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #f7f1e3;
+}
+
+h2 {
+  color: white;
+}
+
+.screen {
+  cursor: pointer;
+  width: 60%;
+  background-color: #f7f1e3 !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.controls {
+  width: 60%;
+  background-color: #fff;
+  color: #f7f1e3;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 0 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play-circle {
+  color: #218c74;
+  transition: color 200ms;
+}
+
+.controls .fa-play-circle:hover {
+  color: #33d9b2;
+}
+
+.controls .fa-stop-circle {
+  color: #b33939;
+  transition: color 200ms;
+}
+
+.controls .fa-stop-circle:hover {
+  color: #ff5252;
+}
+
+.controls .fa-pause-circle {
+  color: #aaa69d;
+  transition: color 200ms;
+}
+
+.controls .fa-pause-circle:hover {
+  color: #f7f1e3;
+}
+
+.controls .timestamp {
+  color: #1e272e;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
